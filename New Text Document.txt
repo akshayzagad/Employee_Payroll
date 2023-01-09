@@ -69,3 +69,15 @@ alter table payroll_service.employee_payroll add (Deductions int);
 alter table payroll_service.employee_payroll add (TaxablePay int);
 alter table payroll_service.employee_payroll add (IncomeTax int);
 alter table payroll_service.employee_payroll add (NetPay int);
+
+UC11->Creat A New Table And Redo A Uc 7
+create table Depaetment(
+department_id int auto_increment,
+primary key(department_id),
+Department varchar(30) not null,
+employee_id int,
+FOREIGN KEY (employee_id) references payroll_service.employee_payroll(id));
+ insert into Depaetment(Department,employee_id) values ('Marketing',2);
+select*from Depaetment;
+select*from Depaetment;
+select sum(salary), avg(salary), max(salary), min(salary) from payroll_service.employee_payroll where Gender = 'F' group by Gender;
