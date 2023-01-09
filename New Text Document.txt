@@ -43,3 +43,11 @@ select * from employee_payroll
 where id in(2,5);
 select * from employee_payroll
 where start_date between cast('2022-08-01' as date)  and date(now());
+
+UC6->
+alter table employee_payroll add gender varchar(10) after name;
+update employee_payroll 
+set gender = "Male";
+update employee_payroll 
+set salary = 2800000.0 where name = "Vaibhav";
+update Employee_Payroll set Gender ='M' where id = '1' or id = '2' ;
