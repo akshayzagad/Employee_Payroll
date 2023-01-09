@@ -21,3 +21,14 @@ values("Akshay",6000000.0,'2022-08-22'),
 ("Goverdhan",8000000.0,'2022-09-11'),
 ("Hemant",7000000.0,'2022-09-13'),
 ("Vaibhav",6000000.0,'2022-07-21');
+
+UC4->
+select * from employee_payroll;
+select * from employee_payroll 
+where name = "Akshay";
+select * from employee_payroll 
+where id between 2 and 4;
+select * from employee_payroll 
+where id in(2,5);
+select * from employee_payroll
+where start_date between cast('2022-08-01' as date)  and date(now());
