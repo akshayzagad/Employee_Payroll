@@ -1,1 +1,5 @@
 Welcome to Employee_Payroll Programme
+
+UC1->
+create database payroll_service;
+use payroll_service;
