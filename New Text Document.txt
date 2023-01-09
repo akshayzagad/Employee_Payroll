@@ -57,3 +57,8 @@ insert into payroll_service.employee_payroll(Name,gender,salary,start_Date)
 values('Charlie','F','250000','2022-09-13');
 select*from payroll_service.employee_payroll;
 select sum(salary), avg(salary), max(salary), min(salary) from payroll_service.employee_payroll where Gender = 'F' group by Gender;
+
+UC8->
+alter table payroll_service.employee_payroll  add Phone_Number int;
+alter table payroll_service.employee_payroll  add Department varchar(20) not null;
+alter table payroll_service.employee_payroll add Address varchar(20) default 'Yerwada';
