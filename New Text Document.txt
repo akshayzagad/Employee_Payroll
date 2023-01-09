@@ -62,3 +62,10 @@ UC8->
 alter table payroll_service.employee_payroll  add Phone_Number int;
 alter table payroll_service.employee_payroll  add Department varchar(20) not null;
 alter table payroll_service.employee_payroll add Address varchar(20) default 'Yerwada';
+
+UC9->
+alter table payroll_service.employee_payroll add (BasicPay int);
+alter table payroll_service.employee_payroll add (Deductions int);
+alter table payroll_service.employee_payroll add (TaxablePay int);
+alter table payroll_service.employee_payroll add (IncomeTax int);
+alter table payroll_service.employee_payroll add (NetPay int);
