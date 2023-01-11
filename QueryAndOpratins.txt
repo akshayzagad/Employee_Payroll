@@ -81,3 +81,13 @@ FOREIGN KEY (employee_id) references payroll_service.employee_payroll(id));
 select*from Depaetment;
 select*from Depaetment;
 select sum(salary), avg(salary), max(salary), min(salary) from payroll_service.employee_payroll where Gender = 'F' group by Gender;
+
+UC12->Connect Two tables And perform UC5 And UC6 Opration
+desc Depaetment; 
+select Department from Depaetment;
+select*from payroll_service.employee_payroll as e
+inner join Depaetment as d
+on e.id=d.employee_id;
+select e.name,e.salary,d.Department,e.start_date from payroll_service.employee_payroll as e
+inner join Depaetment as d
+on e.id=d.employee_id;
